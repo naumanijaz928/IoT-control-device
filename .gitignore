@@ -1,0 +1,61 @@
+# ===================== Secrets =====================
+# Never commit Wi-Fi / broker credentials
+**/secrets.h
+.env
+.env.*
+!.env.example
+
+# ===================== ESP32 / Arduino =====================
+firmware/**/build/
+*.bin
+*.elf
+*.hex
+*.map
+
+# ===================== Python (FastAPI) =====================
+backend/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*$py.class
+backend/.venv/
+backend/venv/
+backend/env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================== Node / Expo (React Native) =====================
+iot-app/node_modules/
+iot-app/.expo/
+iot-app/.expo-shared/
+iot-app/dist/
+iot-app/web-build/
+iot-app/android/
+iot-app/ios/
+iot-app/*.jks
+iot-app/*.p8
+iot-app/*.p12
+iot-app/*.key
+iot-app/*.mobileprovision
+iot-app/*.orig.*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.metro-health-check*
+
+# ===================== Docker / Mosquitto =====================
+mqtt/data/
+mqtt/log/
+mqtt/passwd
+
+# ===================== OS / Editor =====================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.log
